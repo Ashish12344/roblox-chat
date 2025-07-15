@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: groq-chat-api
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: GROQ_API_KEY
+        value: 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
