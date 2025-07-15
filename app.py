@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 import requests
 import os
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 app = Flask(__name__)
 
-GROQ_API_KEY = "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"
 GROQ_MODEL = "llama3-8b-8192"  # or llama3-8b-8192
 
 @app.route('/chat', methods=['POST'])
